@@ -16,8 +16,8 @@ services:
       - PORT=${SERVICE_PORT:-3080}
       - FQDN=${SERVICE_FQDN}
       - NODE_ENV=production
-      - DOMAIN_CLIENT=http://${SERVICE_FQDN}:${SERVICE_PORT:-3080}
-      - DOMAIN_SERVER=http://${SERVICE_FQDN}:${SERVICE_PORT:-3080}
+      - DOMAIN_CLIENT=https://${SERVICE_FQDN}
+      - DOMAIN_SERVER=https://${SERVICE_FQDN}
       - ALLOW_REGISTRATION=true
       - ALLOW_SOCIAL_LOGIN=true
       - ALLOW_EMAIL_LOGIN=true
