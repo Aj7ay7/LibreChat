@@ -11,6 +11,8 @@ services:
     restart: always
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    labels:
+      - "traefik.http.middlewares.ipwhitelist.ipwhitelist.sourcerange=139.59.100.204/32,5.78.83.80/32"  
     environment:
       - HOST=0.0.0.0
       - PORT=${SERVICE_PORT:-3080}
