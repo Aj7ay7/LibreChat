@@ -98,7 +98,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - DB_HOST=${DB_HOST}
       - RAG_PORT=${RAG_PORT:-8000}
-      - OPENAI_API_KEY=${SERVICE_OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${SERVICE_ANTHROPIC_API_KEY}
     restart: always
     depends_on:
       - vectordb
